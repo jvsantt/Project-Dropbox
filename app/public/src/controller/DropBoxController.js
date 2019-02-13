@@ -1,6 +1,6 @@
 class DropBoxController {
   constructor() {
-    this.btnSendFilEl = document.querySelector("#btn-send-file");
+    this.btnSendFileEl = document.querySelector("#btn-send-file");
     this.inputFilesEl = document.querySelector("#files");
     this.snackModalEl = document.querySelector("#react-snackbar-root");
 
@@ -8,7 +8,7 @@ class DropBoxController {
   }
 
   initvents() {
-    this.btnSendFilEl.addEventListener("click", event => {
+    this.btnSendFileEl.addEventListener("click", event => {
       this.inputFilesEl.click();
     });
     this.inputFilesEl.addEventListener("change", event => {
